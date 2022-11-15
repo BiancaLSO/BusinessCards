@@ -9,7 +9,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - run: npm install -g bats
-      - run: bats -v
+      - run: npm install
       - name: MongoDB in GitHub Actions
         uses: supercharge/mongodb-github-action@1.8.0
+      - run: npm run lint
